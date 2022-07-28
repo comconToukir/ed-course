@@ -23,7 +23,8 @@ p {
   filter: brightness(40%);
 }
 
-.heading-text > h1 , p{
+.heading-text > h1 ,
+.heading-text > p{
   max-width: 650px;
 }
 /* .course-card-section {
