@@ -1,21 +1,36 @@
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* variable declaration */
+:root {
+  --tech-blue: #289BDE;
+}
 
-
+/* common styles */
 body {
   font-family: 'Poppins', sans-serif;
 }
 section {
   margin-bottom: 120px;
 }
-/* carousel section */
-h1, h2, button, p {
+
+h1, h2, h5, button, p {
   letter-spacing: 1px;
 }
 p {
   font-weight: 300;
 }
+.heading-text > h1 ,
+.heading-text > p{
+  max-width: 650px;
+}
+
+/* utility classes */
+.bg-tech-blue {
+  background-color: var(--tech-blue);
+}
+
+/* carousel section */
 .carousel-item > img {
   min-height: 380px;
   max-height: 700px;
@@ -23,26 +38,16 @@ p {
   filter: brightness(40%);
 }
 
-.heading-text > h1 ,
-.heading-text > p{
-  max-width: 650px;
+/* course section */
+.course-img {
+  max-height: 250px;
 }
-/* .course-card-section {
-  column-gap: 5px;
-} */
-.course-card img{
+.course-img img{
   width: 100%;
   object-fit: cover;
 }
-.img-side {
-  aspect-ratio: 1;
-  max-height: 235px;
-  max-width: 100%;
-}
 
-.e-learning-img-side {
-}
-
+/* explore learning */
 .e-learning-img-side > img {
   width: 100%;
   height: 100%;
@@ -50,6 +55,7 @@ p {
   object-position: right;
 }
 
+/* faq section */
 .accordion {
   max-width: 872px;
 }

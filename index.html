@@ -44,6 +44,8 @@
               >
               <button
                 class="btn btn-outline-primary w-25 rounded-1 fw-semibold"
+                data-bs-toggle="modal"
+                data-bs-target="#registrationModal"
               >
                 Register
               </button>
@@ -57,10 +59,10 @@
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
-          data-bs-ride="false"
+          data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="10000">
               <img
                 src="images/cover/cover-1.png"
                 class="d-block w-100"
@@ -79,7 +81,7 @@
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="10000">
               <img
                 src="images/cover/cover-2.jpg"
                 class="d-block w-100"
@@ -98,7 +100,7 @@
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="10000">
               <img
                 src="images/cover/cover-3.jpg"
                 class="d-block w-100"
@@ -139,8 +141,11 @@
         </div>
       </section>
     </header>
+    
     <main class="px-3">
       <!-- popular courses section -->
+      
+
       <section class="container text-center" id="courses">
         <div
           class="d-flex flex-column align-items-center text-center heading-text mb-5"
@@ -151,130 +156,114 @@
             the readable content of a page when looking at its layout.
           </p>
         </div>
-        <!-- course cards -->
-        <div
-          class="row row-cols-1 row-cols-lg-2 g-3 course-card-section text-start"
-        >
-          <!-- individual card -->
-          <div
-            class="d-flex flex-column flex-md-row border border-1 px-0 rounded-2 course-card overflow-hidden"
-          >
-            <div class="h-100 img-side">
-              <img
-                class="img-fluid pe-0 h-100"
-                src="images/course/course-1.png"
-                alt=""
-              />
-            </div>
-            <div class="ms-md-4 my-md-auto pe-md-2 py-3 p-3 px-md-0">
-              <h5 class="fw-semibold">Fundamental Of UI/UX Design</h5>
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card.
-              </p>
-              <h5 class="text-primary fw-semibold">Price : 20$</h5>
+
+        <div class="row row-cols-1 row-cols-lg-2 g-3">
+
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-5 col-xl-4 course-img">
+                  <img src="images/course/Rectangle-1.png" class="img-fluid rounded-start h-100 d-md-none" alt="...">
+                  <img src="images/course/course-1.png" class="img-fluid rounded-start h-100 d-none d-md-block" alt="...">
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-8 my-auto">
+                  <div class="card-body text-start">
+                    <h5 class="card-title fw-semibold">Fundamental Of UI/UX Design</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- individual card -->
-          <div
-            class="d-flex flex-column flex-md-row border border-1 px-0 rounded-2 course-card overflow-hidden"
-          >
-            <div class="h-100 img-side">
-              <img
-                class="img-fluid pe-0 h-100"
-                src="images/course/course-2.png"
-                alt=""
-              />
-            </div>
-            <div class="ms-md-4 my-md-auto pe-md-2 py-3 p-3 px-md-0">
-              <h5 class="fw-semibold">Fundamental Of UI/UX Design</h5>
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card.
-              </p>
-              <h5 class="text-primary fw-semibold">Price : 20$</h5>
+  
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-5 col-xl-4 course-img">
+                  <img src="images/course/Rectangle-2.png" class="img-fluid rounded-start h-100 d-md-none" alt="...">
+                  <img src="images/course/course-2.png" class="img-fluid rounded-start h-100 d-none d-md-block" alt="...">
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-8 my-auto">
+                  <div class="card-body text-start">
+                    <h5 class="card-title fw-semibold">Javascript Basic to advanced</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- individual card -->
-          <div
-            class="d-flex flex-column flex-md-row border border-1 px-0 rounded-2 course-card overflow-hidden"
-          >
-            <div class="h-100 img-side">
-              <img
-                class="img-fluid pe-0 h-100"
-                src="images/course/course-3.png"
-                alt=""
-              />
-            </div>
-            <div class="ms-md-4 my-md-auto pe-md-2 py-3 p-3 px-md-0">
-              <h5 class="fw-semibold">Fundamental Of UI/UX Design</h5>
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card.
-              </p>
-              <h5 class="text-primary fw-semibold">Price : 20$</h5>
+  
+          <div class="col">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-5 col-xl-4 course-img">
+                  <img src="images/course/Rectangle-3.png" class="img-fluid rounded-start h-100 d-md-none" alt="...">
+                  <img src="images/course/course-3.png" class="img-fluid rounded-start h-100 d-none d-md-block" alt="...">
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-8 my-auto">
+                  <div class="card-body text-start">
+                    <h5 class="card-title fw-semibold">Fullstack Web Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- individual card -->
-          <div
-            class="d-flex flex-column flex-md-row border border-1 px-0 rounded-2 course-card overflow-hidden d-none d-lg-flex"
-          >
-            <div class="h-100 img-side">
-              <img
-                class="img-fluid pe-0 h-100"
-                src="images/course/course-4.png"
-                alt=""
-              />
-            </div>
-            <div class="ms-md-4 my-md-auto pe-md-2 py-3 p-3 px-md-0">
-              <h5 class="fw-semibold">Fundamental Of UI/UX Design</h5>
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card.
-              </p>
-              <h5 class="text-primary fw-semibold">Price : 20$</h5>
+  
+          <div class="col d-none d-lg-block">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-5 col-xl-4 course-img">
+                  <img src="images/course/course-4.png" class="img-fluid rounded-start h-100 d-md-block" alt="...">
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-8 my-auto">
+                  <div class="card-body text-start">
+                    <h5 class="card-title fw-semibold">Digital Marketing</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- individual card -->
-          <div
-            class="d-flex flex-column flex-md-row border border-1 px-0 rounded-2 course-card overflow-hidden d-none d-lg-flex"
-          >
-            <div class="h-100 img-side">
-              <img
-                class="img-fluid pe-0 h-100"
-                src="images/course/course-5.png"
-                alt=""
-              />
-            </div>
-            <div class="ms-md-4 my-md-auto pe-md-2 py-3 p-3 px-md-0">
-              <h5 class="fw-semibold">Fundamental Of UI/UX Design</h5>
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card.
-              </p>
-              <h5 class="text-primary fw-semibold">Price : 20$</h5>
+
+          <div class="col d-none d-lg-block">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-5 col-xl-4 course-img">
+                  <img src="images/course/course-5.png" class="img-fluid rounded-start h-100 d-md-block" alt="...">
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-8 my-auto">
+                  <div class="card-body text-start">
+                    <h5 class="card-title fw-semibold">Photography Basic Rules</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- individual card -->
-          <div
-            class="d-flex flex-column flex-md-row border border-1 px-0 rounded-2 course-card overflow-hidden d-none d-lg-flex"
-          >
-            <div class="h-100 img-side">
-              <img
-                class="img-fluid pe-0 h-100"
-                src="images/course/course-6.png"
-                alt=""
-              />
-            </div>
-            <div class="ms-md-4 my-md-auto pe-md-2 py-3 p-3 px-md-0">
-              <h5 class="fw-semibold">Fundamental Of UI/UX Design</h5>
-              <p>
-                Some quick example text to build on the card title and make up
-                the bulk of the card.
-              </p>
-              <h5 class="text-primary fw-semibold">Price : 20$</h5>
+
+          <div class="col d-none d-lg-block">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-5 col-xl-4 course-img">
+                  <img src="images/course/course-6.png" class="img-fluid rounded-start h-100 d-md-block" alt="...">
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-8 my-auto">
+                  <div class="card-body text-start">
+                    <h5 class="card-title fw-semibold">Motion Graphics</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+  
         </div>
         <button class="btn btn-primary mt-5 px-4 py-3 fw-semibold">See More Courses</button>
       </section>
@@ -287,8 +276,8 @@
           </div>
           <div class="col-md-6 col-12 my-auto mt-5 mt-md-2 mt-lg-0 px-4 ps-3 px-lg-5 py-lg-5 py-3">
             <h2 class="fw-semibold mb-4 pt-0 pt-lg-5">Explore The elearning Institute</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure.</p>
-            <p class="mb-4">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need to be sure<span class="text-primary fw-semibold d-lg-none">...See More</span></p>
+            <p class="mb-4 d-none d-lg-block">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
             <div class="row row-cols-2 row-cols-lg-3 mb-0 mb-md-2 mb-lg-4">
               <div class="">
                 <h2 class="fw-semibold">3.2K+</h2>
@@ -309,7 +298,7 @@
       </section>
 
       <!-- Successful students -->
-      <section class="container text-center">
+      <section class="container text-center" id="success">
         <div class="text-center text-md-start heading-text d-flex flex-column align-items-center align-items-md-start mb-5">
           <h1 class="fw-semibold mt-4">Meet Our Successfull Students</h1>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
