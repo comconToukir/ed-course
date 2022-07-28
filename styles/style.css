@@ -20,9 +20,12 @@ section {
   filter: brightness(40%);
 }
 
-.popular-text > h1 , p{
+.heading-text > h1 , p{
   max-width: 650px;
 }
+/* .course-card-section {
+  column-gap: 5px;
+} */
 .course-card img{
   width: 100%;
   object-fit: cover;
@@ -31,4 +34,14 @@ section {
   aspect-ratio: 1;
   max-height: 235px;
   max-width: 100%;
+}
+
+.accordion {
+  max-width: 872px;
+}
+.accordion-button.collapsed {
+  border: 1px solid lightgrey;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
 }
