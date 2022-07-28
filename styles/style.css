@@ -10,8 +10,11 @@ section {
   margin-bottom: 120px;
 }
 /* carousel section */
-.carousel-item {
+h1, h2, button, p {
   letter-spacing: 1px;
+}
+p {
+  font-weight: 300;
 }
 .carousel-item > img {
   min-height: 380px;
