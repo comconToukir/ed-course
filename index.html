@@ -13,12 +13,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/2bbf0526dc.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- navigation and slides -->
     <header>
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg py-4">
+      <nav class="navbar navbar-expand-lg py-4 fixed-top bg-white">
         <div class="container">
           <a class="navbar-brand fw-semibold fs-2" href="#">ED COURSE</a>
           <button
@@ -40,10 +41,10 @@
               <a class="nav-link me-3" href="#success">Success</a>
               <a class="nav-link me-3" href="#about">About</a>
               <a class="nav-link me-3 mb-2 mb-lg-0" href="#register"
-                >Register</a
+                >Registration</a
               >
               <button
-                class="btn btn-outline-primary w-25 rounded-1 fw-semibold"
+                class="btn btn-outline-tech-blue text-tech-blue w-25 rounded-1 fw-semibold"
                 data-bs-toggle="modal"
                 data-bs-target="#registrationModal"
               >
@@ -55,7 +56,7 @@
       </nav>
 
       <!-- carousel -->
-      <section class="container px-0">
+      <section class="container px-0 extra-margin-top">
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -79,6 +80,7 @@
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
+                <button class="btn btn-tech-blue px-4 py-3 fw-semibold mt-4">Get Started</button>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
@@ -98,6 +100,7 @@
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
+                <button class="btn btn-tech-blue px-4 py-3 fw-semibold mt-4">Get Started</button>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="10000">
@@ -117,6 +120,7 @@
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
+                <button class="btn btn-tech-blue px-4 py-3 fw-semibold mt-4">Get Started</button>
               </div>
             </div>
           </div>
@@ -144,8 +148,6 @@
     
     <main class="px-3">
       <!-- popular courses section -->
-      
-
       <section class="container text-center" id="courses">
         <div
           class="d-flex flex-column align-items-center text-center heading-text mb-5"
@@ -160,8 +162,8 @@
         <div class="row row-cols-1 row-cols-lg-2 g-3">
 
           <div class="col">
-            <div class="card">
-              <div class="row g-0">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
                 <div class="col-md-4 col-lg-5 col-xl-4 course-img">
                   <img src="images/course/Rectangle-1.png" class="img-fluid rounded-start h-100 d-md-none" alt="...">
                   <img src="images/course/course-1.png" class="img-fluid rounded-start h-100 d-none d-md-block" alt="...">
@@ -170,7 +172,7 @@
                   <div class="card-body text-start">
                     <h5 class="card-title fw-semibold">Fundamental Of UI/UX Design</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
-                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                    <h5 class="text-tech-blue fw-semibold">Price : 20$</h5>
                   </div>
                 </div>
               </div>
@@ -178,8 +180,8 @@
           </div>
   
           <div class="col">
-            <div class="card">
-              <div class="row g-0">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
                 <div class="col-md-4 col-lg-5 col-xl-4 course-img">
                   <img src="images/course/Rectangle-2.png" class="img-fluid rounded-start h-100 d-md-none" alt="...">
                   <img src="images/course/course-2.png" class="img-fluid rounded-start h-100 d-none d-md-block" alt="...">
@@ -188,7 +190,7 @@
                   <div class="card-body text-start">
                     <h5 class="card-title fw-semibold">Javascript Basic to advanced</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
-                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                    <h5 class="text-tech-blue fw-semibold">Price : 20$</h5>
                   </div>
                 </div>
               </div>
@@ -196,8 +198,8 @@
           </div>
   
           <div class="col">
-            <div class="card">
-              <div class="row g-0">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
                 <div class="col-md-4 col-lg-5 col-xl-4 course-img">
                   <img src="images/course/Rectangle-3.png" class="img-fluid rounded-start h-100 d-md-none" alt="...">
                   <img src="images/course/course-3.png" class="img-fluid rounded-start h-100 d-none d-md-block" alt="...">
@@ -206,7 +208,7 @@
                   <div class="card-body text-start">
                     <h5 class="card-title fw-semibold">Fullstack Web Development</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
-                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                    <h5 class="text-tech-blue fw-semibold">Price : 20$</h5>
                   </div>
                 </div>
               </div>
@@ -214,8 +216,8 @@
           </div>
   
           <div class="col d-none d-lg-block">
-            <div class="card">
-              <div class="row g-0">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
                 <div class="col-md-4 col-lg-5 col-xl-4 course-img">
                   <img src="images/course/course-4.png" class="img-fluid rounded-start h-100 d-md-block" alt="...">
                 </div>
@@ -223,7 +225,7 @@
                   <div class="card-body text-start">
                     <h5 class="card-title fw-semibold">Digital Marketing</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
-                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                    <h5 class="text-tech-blue fw-semibold">Price : 20$</h5>
                   </div>
                 </div>
               </div>
@@ -231,8 +233,8 @@
           </div>
 
           <div class="col d-none d-lg-block">
-            <div class="card">
-              <div class="row g-0">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
                 <div class="col-md-4 col-lg-5 col-xl-4 course-img">
                   <img src="images/course/course-5.png" class="img-fluid rounded-start h-100 d-md-block" alt="...">
                 </div>
@@ -240,7 +242,7 @@
                   <div class="card-body text-start">
                     <h5 class="card-title fw-semibold">Photography Basic Rules</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
-                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                    <h5 class="text-tech-blue fw-semibold">Price : 20$</h5>
                   </div>
                 </div>
               </div>
@@ -248,8 +250,8 @@
           </div>
 
           <div class="col d-none d-lg-block">
-            <div class="card">
-              <div class="row g-0">
+            <div class="card h-100">
+              <div class="row g-0 h-100">
                 <div class="col-md-4 col-lg-5 col-xl-4 course-img">
                   <img src="images/course/course-6.png" class="img-fluid rounded-start h-100 d-md-block" alt="...">
                 </div>
@@ -257,7 +259,7 @@
                   <div class="card-body text-start">
                     <h5 class="card-title fw-semibold">Motion Graphics</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.</p>
-                    <h5 class="text-primary fw-semibold">Price : 20$</h5>
+                    <h5 class="text-tech-blue fw-semibold">Price : 20$</h5>
                   </div>
                 </div>
               </div>
@@ -265,18 +267,18 @@
           </div>
   
         </div>
-        <button class="btn btn-primary mt-5 px-4 py-3 fw-semibold">See More Courses</button>
+        <button class="btn btn-tech-blue mt-5 px-4 py-3 fw-semibold">See More Courses</button>
       </section>
 
       <!-- explore e-learning section -->
-      <section class="container explore-learning bg-primary bg-opacity-10 rounded-end ">
+      <section class="container explore-learning bg-transparent-tech-blue rounded-end ">
         <div class="row"> 
           <div class="col-md-6 col-12 px-0 e-learning-img-side overflow-hidden">
             <img class="position-relative" src="images/working.png" alt=""> 
           </div>
           <div class="col-md-6 col-12 my-auto mt-5 mt-md-2 mt-lg-0 px-4 ps-3 px-lg-5 py-lg-5 py-3">
             <h2 class="fw-semibold mb-4 pt-0 pt-lg-5">Explore The elearning Institute</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need to be sure<span class="text-primary fw-semibold d-lg-none">...See More</span></p>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need to be sure<span class="text-tech-blue fw-semibold d-lg-none">...See More</span></p>
             <p class="mb-4 d-none d-lg-block">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
             <div class="row row-cols-2 row-cols-lg-3 mb-0 mb-md-2 mb-lg-4">
               <div class="">
@@ -292,7 +294,7 @@
                 <p>Rating & Review</p>
               </div>
             </div>
-            <button class="btn btn-primary py-3 px-5 fw-semibold my-lg-5 my-0" href="">Read More</button>
+            <button class="btn btn-tech-blue py-3 px-5 fw-semibold my-lg-5 my-0" href="">Read More</button>
           </div>
         </div>
       </section>
@@ -333,11 +335,79 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-primary px-5 py-3 fw-semibold mt-5">View All</button>
+        <button class="btn btn-tech-blue px-5 py-3 fw-semibold mt-5">View All</button>
+      </section>
+
+      <!-- feedback section -->
+      <section class="container text-center">
+        <div
+          class="d-flex flex-column align-items-center text-center heading-text mb-5"
+        >
+          <h1 class="mb-3 fw-semibold">Some Students Feedback</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          </p>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item text-start active">
+              <div class="row row-cols-1 row-cols-lg-2 g-3">
+
+                <div class="col">
+                  <div class="p-4 border border-1 rounded-2">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <img src="images/comma.png" alt="">
+                      <div class="d-flex">
+                        <i class="fa-solid fa-star lit-star"></i>
+                        <i class="fa-solid fa-star lit-star ms-1"></i>
+                        <i class="fa-solid fa-star lit-star ms-1"></i>
+                        <i class="fa-solid fa-star lit-star ms-1"></i>
+                        <i class="fa-solid fa-star dim-star ms-1"></i>
+                      </div>
+                    </div>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/student/student-5.png" alt="">
+                      <div class="ms-3">
+                        <h5 class="fw-semibold">Awlad Hossain</h5>
+                        <p class="mb-0">UI Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="p-4 border border-1 rounded-2">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <img src="images/comma.png" alt="">
+                      <div class="d-flex">
+                        <i class="fa-solid fa-star lit-star"></i>
+                        <i class="fa-solid fa-star lit-star ms-1"></i>
+                        <i class="fa-solid fa-star lit-star ms-1"></i>
+                        <i class="fa-solid fa-star lit-star ms-1"></i>
+                        <i class="fa-solid fa-star dim-star ms-1"></i>
+                      </div>
+                    </div>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/student/student-6.png" alt="">
+                      <div class="ms-3">
+                        <h5 class="fw-semibold">Shanta Akter</h5>
+                        <p class="mb-0">Graphic Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-tech-blue px-4 py-3 mt-5 d-lg-none">View All</button>
       </section>
 
       <!-- register section -->
-      <section class="container text-bg-primary p-5" id="register">
+      <section class="container bg-tech-blue text-white p-5" id="register">
         <div class="row p-1 p-lg-5 text-center text-lg-start">
           <div class="col-12 col-lg-6">
             <h2 class="fw-semibold mb-4">Ready to join?</h2>
@@ -350,7 +420,7 @@
             class="col-12 col-lg-6 d-flex justify-content-center align-items-center justify-content-lg-end"
           >
             <button
-              class="btn rounded-1 bg-white text-primary fw-semibold px-4 py-2 mt-4 mt-lg-0"
+              class="btn rounded-1 btn-tech-white fw-semibold px-4 py-2 mt-4 mt-lg-0"
               data-bs-toggle="modal"
               data-bs-target="#registrationModal"
             >
@@ -393,7 +463,7 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Subscribe to Newsletter</label>
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-tech-blue">Submit</button>
                     </form>
                   </div>
                   <div class="modal-footer">

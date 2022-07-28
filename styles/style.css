@@ -29,8 +29,41 @@ p {
 .bg-tech-blue {
   background-color: var(--tech-blue);
 }
+.text-tech-blue {
+  color: var(--tech-blue);
+}
+.btn-tech-blue {
+  color: white;
+  background-color: var(--tech-blue);
+}
+.btn-tech-blue:hover,
+.btn-tech-blue:focus {
+  border: 1px solid var(--tech-blue);
+  color: var(--tech-blue);
+}
+.btn-outline-tech-blue {
+  border: 1px solid var(--tech-blue);
+}
+.btn-outline-tech-blue:hover {
+  background: var(--tech-blue);
+  color: white;
+}
+.btn-outline-tech-blue:focus {
+  color: var(--tech-blue);
+  background-color: white;
+}
+.bg-transparent-tech-blue {
+  background-color: #289bde18;
+}
+.btn-tech-white {
+  color: var(--tech-blue);
+  background-color: white;
+}
 
 /* carousel section */
+.extra-margin-top {
+  margin-top: 105px;
+}
 .carousel-item > img {
   min-height: 380px;
   max-height: 700px;
@@ -55,6 +88,14 @@ p {
   object-position: right;
 }
 
+/* feedback section */
+.lit-star {
+  color: orange;
+}
+.dim-star {
+  color: lightgrey;
+}
+
 /* faq section */
 .accordion {
   max-width: 872px;
@@ -64,4 +105,6 @@ p {
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none;
+  color: var(--tech-blue);
+  background-color: #289bde18;
 }
