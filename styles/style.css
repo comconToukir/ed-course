@@ -6,9 +6,29 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
+section {
+  margin-bottom: 120px;
+}
+/* carousel section */
+.carousel-item {
+  letter-spacing: 1px;
+}
 .carousel-item > img {
-  min-height: 320px;
+  min-height: 380px;
   max-height: 700px;
   object-fit: cover;
+  filter: brightness(40%);
+}
+
+.popular-text > h1 , p{
+  max-width: 650px;
+}
+.course-card img{
+  width: 100%;
+  object-fit: cover;
+}
+.img-side {
+  aspect-ratio: 1;
+  max-height: 235px;
+  max-width: 100%;
 }
